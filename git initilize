@@ -1,0 +1,21 @@
+################ initilize ################ 
+
+initilize:
+		
+	$ git init
+	
+ to show all hiden folders:
+ 
+ 	$ ls -lart
+
+cheek tracked files(Untracked files):
+
+	$ git status
+
+tracked the file form untracked area to staged area:
+
+	$ git add spacified_file_name
+
+showing staging area:
+
+	$ git status
