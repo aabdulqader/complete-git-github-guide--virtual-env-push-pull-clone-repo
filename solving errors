@@ -1,0 +1,39 @@
+        
+error: Unknown subcommand: origin
+#to fix this error:
+
+	$ ssh-keygen -t rsa -b 4096 -C "shimul.official7@gmail.com"
+	$ eval $(ssh-agent -s)
+	$ ssh-add ~/.ssh/id_rsa
+
+generating SSH keys:
+copy this SSH key and save it in your account new SSH key:
+
+	$ cat ~/.ssh/id_rsa.pub
+now push repository:
+
+	$ git push -u origin master
+        
+	
+	
+	
+ANOTHER ERROR:
+
+	if show this error: connection time out: 
+	let's fix this error:
+
+		$ ssh -T -p 443 git@ssh.github.com
+
+	# Override SSH settings
+
+		$ vim ~/.ssh/config
+
+	# Add section below to it:
+
+			Host github.com
+			  Hostname ssh.github.com
+			  Port 443
+
+		$ ssh -T git@github.com
+
+		$ git push -u origin master
