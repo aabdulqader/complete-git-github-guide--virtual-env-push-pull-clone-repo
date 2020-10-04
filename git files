@@ -1,0 +1,36 @@
+################ files commands ################
+
+create a blank file:
+
+	$ touch file_name
+
+to add all files at a time staging area:
+
+	$ git add -A
+	$ git add .
+	
+cheek status:
+edit files...
+to show all modified files:
+
+	$ git status
+	
+shorthand:
+
+ 	$ git status -s
+	
+to add all  modified files one by one or all at a time:
+
+	for one: 
+        
+                $ git add spacified_file_name
+                
+	for one more:
+        
+                $ git add  -A / $ git add .
+      
+let's commit again to save it in git repository:
+
+	$ git commit -m "commit_name" 
+        or,
+	$ git commit -a -m "commit_name"
