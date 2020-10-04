@@ -1,0 +1,10 @@
+################ Git log ################
+
+git log: [to show all details about username,emails etc.]
+
+	$ git log
+
+to filter git log output : [to show last amount of commits]{to show all changes what happens where}
+
+	$ git log -p -1
+	enter diff output :q
