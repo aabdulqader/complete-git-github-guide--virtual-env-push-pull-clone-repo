@@ -1,0 +1,25 @@
+################ Git Ignore Command ################
+creat a file:
+	$ touch .gitignore
+creat a log file:
+	touch mylogs.log
+		[ processing...
+		  downloading...
+		  updating...]
+
+to ignore mylogs.log open .gitignore file in vs code:
+	[mylogs.log]
+
+creat a directory in vs code:
+	logs
+creat a file in logs directory in vs code:
+	mylogs.log
+to ignore logs/mylogs.log open .gitignore file in vs code:
+	[/mylogs.log
+  	*.log
+	]
+
+to ignore a(logs) directory  open .gitignore file in vs code:
+		[/mylogs.log
+  		*.log
+		logs/]
