@@ -1,0 +1,18 @@
+################ git checkout ################  
+
+to recovery one file (match the file with last commit): 
+
+	$  git checkout spadified_file_name (cintent.html)
+
+match these files with last commit: 
+to recovery more files ( match these files with last commit):
+
+	$  git checkout -f
+
+check status: 
+
+	$ git status
+	
+shorthand:
+
+ 	$ git status -s
