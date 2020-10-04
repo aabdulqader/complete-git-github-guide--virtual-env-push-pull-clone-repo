@@ -3,6 +3,7 @@
 
 
 
+################ git push command ################ 
 
 To Push a Repository enter these commands one by one.
 
@@ -11,12 +12,32 @@ To Push a Repository enter these commands one by one.
         $ git commit -a -m 'first commit'
         $ git commit -m "first commit"
         $ git branch -M master
-        $ git remote add origin (git@github.com:shimul-aq/Portfolio.git)
-        $ git remote
-        $ git remote -v
+       $ git remote add origin repo_address(HTTPS/SSH) 
+	
+check remode origin:
+
+	$ git remote
+	
+check push and fetch address: 
+
+	$ git remote -v
+        
+push main branch:
+
         $ git push origin master
         $ git push -u origin master
+        $ git push
+        $ git push
+
+bush another branch:
+
+        $ git checkout branch_name1
+        $ git push -u branch_name1
+        $ git push
+        $ git push
+
+        $ git checkout branch_name2
+        $ git push -u branch_name2
+        $ git push
+        $ git push
         
-
-
-
