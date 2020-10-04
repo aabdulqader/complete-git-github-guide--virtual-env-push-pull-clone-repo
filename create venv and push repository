@@ -1,0 +1,97 @@
+
+Complete Guide to Create A Virtual Environment and Push a Repository
+
+virtual environment:
+
+1. Install venv:
+
+	$ pip install virtualenv / $ pip install --user virtualenv
+
+2. Create a dir:
+
+	$ virtualenv venv
+     	$ python -m venv venv
+                
+3. Activate venv:
+
+	$ source venv/Scripts/activate
+
+4. install django in this venv:(install packages)
+
+	$ pip install django
+	$ pip install pandas
+
+4. Create a txt file which contains all necessary packages:
+
+	                requirements.txt
+        
+5.install all packages from requirements.txt:
+
+	$ pip install -r requirements.txt
+
+
+6.To show venv:
+
+	$ pip show virtualenv
+        
+***version numbers for the installed packages.
+
+	$ pip freeze
+	$ pip list
+        
+w virtualenv
+
+7. To Check venv version:
+
+	$ pip virtualenv --version
+        
+8. Uninstall:
+
+	$ pip uninstall virtualenv 
+        
+9. Deactivate:
+
+	$ deactivate
+
+
+################ To Push a Repository ################
+
+        $ git init
+        $ git add . / git add  -A
+        $ git commit -a -m 'first commit'
+        $ git commit -m "first commit"
+        $ git branch -M master
+        $ git remote add origin git@github.com:shimul-aq/Portfolio.git
+        $ git push -u origin master
+        $ git remote
+        $ git remote -v
+        $ git push origin master
+        
+if get errors: 
+error: Unknown subcommand: origin
+-- to fix this error:
+
+	$ ssh-keygen -t rsa -b 4096 -C "shimul.official7@gmail.com"
+	$ eval $(ssh-agent -s)
+	$ ssh-add ~/.ssh/id_rsa
+	$ cat ~/.ssh/id_rsa.pub
+	$ git push -u origin master
+          
+if show this error: connection time out: 
+let's fix this error:
+
+	$ ssh -T -p 443 git@ssh.github.com
+        
+# Override SSH settings:
+
+	$ vim ~/.ssh/config
+        
+# Add section below to it:
+
+                Host github.com
+                  Hostname ssh.github.com
+                  Port 443
+
+	$ ssh -T git@github.com
+	$ git push -u origin master
+
