@@ -1,0 +1,22 @@
+
+
+
+
+
+
+To Push a Repository enter these commands one by one.
+
+        $ git init
+        $ git add . / git add  -A
+        $ git commit -a -m 'first commit'
+        $ git commit -m "first commit"
+        $ git branch -M master
+        $ git remote add origin (git@github.com:shimul-aq/Portfolio.git)
+        $ git remote
+        $ git remote -v
+        $ git push origin master
+        $ git push -u origin master
+        
+
+
+
