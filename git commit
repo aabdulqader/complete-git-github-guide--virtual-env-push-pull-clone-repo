@@ -1,0 +1,12 @@
+################ commit ################ 
+
+		$ git commit
+		###enter i
+		type-Commit_name
+		##press ESC key than enter :wq
+		##press Enter key
+
+	shorthand:
+
+		$ git commit -m "commit_name"
+		$ git commit -a -m "commit_name"
