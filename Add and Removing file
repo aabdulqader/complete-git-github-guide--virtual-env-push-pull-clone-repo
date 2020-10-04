@@ -1,0 +1,29 @@
+################ Add and Removing file (rm command) ################
+
+
+add a file:
+
+	$ touch spacified_file_name
+	$ git status -s
+	$ git add -A
+	
+cheek file list: 
+
+	$ ls
+	$ git commit -a -m  "adding spacified_file_name"
+
+to delet a file from everywhere:( delete from working directory and staging area):
+
+	$ git rm spacified_file_name
+	$ git status -s
+	$ git add -A
+        
+cheek file list:
+
+        $ ls
+	$ git commit -a -m  "removing spacified_file_name"
+
+to remove  from only staging area: (doesn't remove from harddisk):
+
+	$ git rm --cached spacified_file_name
+	
