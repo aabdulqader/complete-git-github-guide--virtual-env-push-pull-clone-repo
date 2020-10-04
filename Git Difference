@@ -1,0 +1,15 @@
+
+################ Git Diff ################ 
+
+it's a diff tools which help to show difference between given file and last commits file.
+
+	1. $ git diff ( compare work tree with staging area)
+	2. $ git diff --staged (compare staging area with last commits)
+
+git diff: [to compare files.. to show difference between staging are and given files]
+
+	$ git diff
+	
+compare staging area with last commits:
+
+	$ git diff --staged
