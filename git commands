@@ -1,0 +1,295 @@
+################ create account ################ 
+	
+create username:
+
+	$ git config --global user.name username
+	
+cheek username:
+
+	$ git config --global user.name
+gmail:
+
+	$ git config --global user.email email.email@gmail.com
+
+cheek gmail:
+
+	$ git config --global user.email
+
+open vs code:
+
+	code .
+	
+################ initilize ################ 
+
+initilize:
+		
+	$ git init
+	
+ to show all hiden folders:
+ 
+ 	$ ls -lart
+
+cheek tracked files(Untracked files):
+
+	$ git status
+
+tracked the file form untracked area to staged area:
+
+	$ git add spacified_file_name
+
+showing staging area:
+
+	$ git status
+
+################ commit ################ 
+
+		$ git commit
+		###enter i
+		type-Commit_name
+		##press ESC key than enter :wq
+		##press Enter key
+
+	shorthand:
+
+		$ git commit -m "commit_name"
+		$ git commit -a -m "commit_name"
+		
+################ files commands ################
+
+create a blank file:
+
+	$ touch file_name
+
+to add all files at a time staging area:
+
+	$ git add -A
+	$ git add .
+	
+cheek status:
+edit files...
+to show all modified files:
+
+	$ git status
+	
+shorthand:
+
+ 	$ git status -s
+	
+to add all  modified files one by one or all at a time:
+
+	for one: $ git add spacified_file_name
+	for one more: $ git add  -A / $ git add .
+
+let's commit again to save it in git repository:
+
+	$ git commit -m "commit_name"
+	/ $ git commit -a -m "commit_name"
+
+################ Git log ################
+
+git log: [to show all details about username,emails etc.]
+
+	$ git log
+
+to filter git log output : [to show last amount of commits]{to show all changes what happens where}
+
+	$ git log -p -1
+	enter diff output :q
+
+
+
+################ Git Diff ################
+it's a diff tools which help to show difference between given file and last commits file.
+	1. $ git diff ( compare work tree with staging area)
+	2. $ git diff --staged (compare staging area with last commits)
+
+git diff: [to compare files.. to show difference between staging are and given files]
+
+	$ git diff
+	
+compare staging area with last commits:
+
+	$ git diff --staged
+
+################ git checkout ################  
+
+to recovery one file{ match the file with last commit}:
+	$  git checkout spadified_file_name (cintent.html)
+
+match these files with last commit: 
+[ to recovery more files] { match these files with last commit}:
+
+	$  git checkout -f
+
+check status: 
+
+	$ git status
+	
+shorthand:
+
+ 	$ git status -s
+
+################ Add and Removing file (rm command) ################
+
+
+add a file:
+
+	$ touch spacified_file_name
+	$ git status -s
+	$ git add -A
+	
+cheek file list: 
+
+	$ ls
+	$ git commit -a -m  "adding spacified_file_name"
+
+to delet a file from everywhere:( delete from working directory and staging area):
+
+	$ git rm spacified_file_name
+	$ git status -s
+	$ git add -A
+        
+cheek file list:
+
+        $ ls
+	$ git commit -a -m  "removing spacified_file_name"
+
+to remove  from only staging area: (doesn't remove from harddisk):
+
+	$ git rm --cached spacified_file_name
+	
+
+################ Git Ignore Command ################
+creat a file:
+	$ touch .gitignore
+creat a log file:
+	touch mylogs.log
+		[ processing...
+		  downloading...
+		  updating...]
+
+to ignore mylogs.log open .gitignore file in vs code:
+	[mylogs.log]
+
+creat a directory in vs code:
+	logs
+creat a file in logs directory in vs code:
+	mylogs.log
+to ignore logs/mylogs.log open .gitignore file in vs code:
+	[/mylogs.log
+  	*.log
+	]
+
+to ignore a(logs) directory  open .gitignore file in vs code:
+		[/mylogs.log
+  		*.log
+		logs/]
+
+
+################ Branches ################ 
+
+master - main branch
+
+to show all branch:
+
+	$ git branch
+to create a branch:
+
+	$ git branch branch_name1
+to show all the branch:
+
+	$ git branch
+
+switched to the spacefied (features1) branch:
+
+	$ git checkout branch_name1
+
+to show all branch:
+
+	$ git branch
+
+create a branch and direct switch to the branch:
+
+	$ git checkout -b branch_name2
+
+to show all branch:
+
+	$ git branch
+	
+merge branch: marge with master branch: 
+
+	$ git merge branch_name1
+
+
+################ Remote Repository ################ 
+
+	$ git remote add origin repo_address(HTTPS/SSH) 
+	
+check remode origin:
+
+	$ git remote
+	
+check push and fetch address: 
+
+	$ git remote -v
+
+################ git push command ################ 
+
+To Push a Repository enter these commands one by one.
+
+        $ git init
+        $ git add . / git add  -A
+        $ git commit -a -m 'first commit'
+        $ git commit -m "first commit"
+        $ git branch -M master
+       $ git remote add origin repo_address(HTTPS/SSH) 
+	
+check remode origin:
+
+	$ git remote
+	
+check push and fetch address: 
+
+	$ git remote -v
+        
+push main branch:
+
+        $ git push origin master
+        $ git push -u origin master
+        $ git push
+        $ git push
+
+bush another branch:
+
+        $ git checkout branch_name1
+        $ git push -u branch_name1
+        $ git push
+        $ git push
+
+        $ git checkout branch_name2
+        $ git push -u branch_name2
+        $ git push
+        $ git push
+
+
+################ git clone ################ 
+
+1. creat a folder at desktop
+2. $ git clone address foldername
+
+clear terminal:
+
+	$ clear
+
+
+
+	
+
+
+
+		
+
+
+
+
+
