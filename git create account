@@ -1,0 +1,20 @@
+################ create account ################ 
+	
+create username:
+
+	$ git config --global user.name username
+	
+cheek username:
+
+	$ git config --global user.name
+gmail:
+
+	$ git config --global user.email email.email@gmail.com
+
+cheek gmail:
+
+	$ git config --global user.email
+
+open vs code:
+
+	code .
