@@ -12,7 +12,7 @@ $ # Override SSH settings:
 
         $ vim ~/.ssh/config
 
-# Add section below to it:
+# Add section below to it:(SAVE: Esc>:w>Enter, SAVE&QUIT: Esc>:wq>Enter)
 
                 Host github.com
                   Hostname ssh.github.com
